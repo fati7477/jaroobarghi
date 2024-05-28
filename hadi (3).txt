@@ -1,0 +1,19 @@
+import numpy as np
+
+# تعریف ابعاد ماتریس اتاق‌ها
+rows = 5
+cols = 5
+
+# ساخت ماتریس اتاق‌ها
+rooms = np.zeros((rows, cols))
+
+# تصادفی کردن اتاق‌ها
+for i in range(rows):
+    for j in range(cols):
+        rooms[i, j] = np.random.randint(0, 2)
+
+# تمیز کردن اتاق‌ها
+for i in range(rows):
+    for j in range(cols):
+        if rooms[i, j] == 1:
+            print(f"Cleaning room ({i}, {j})")
