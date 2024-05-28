@@ -1,15 +1,15 @@
 import numpy as np
 
 # تعریف ابعاد ماتریس اتاق‌ها
-rows = 5
-cols = 5
+rows = 16
+cols = 26
 
 # ساخت ماتریس اتاق‌ها
 rooms = np.zeros((rows, cols))
 
 # تصادفی کردن اتاق‌ها
 for i in range(rows):
-    for j in range(cols):
+    for j in range(colsss):
         rooms[i, j] = np.random.randint(0, 2)
 
 # تمیز کردن اتاق‌ها
